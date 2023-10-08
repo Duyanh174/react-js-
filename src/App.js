@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-// component lớn nhất trong dự án 
+import logo from "./logo.svg";
+import "./App.css";
+import FunctionComponent from "./demoComponent/FunctionComponent";
+import ClassComponent from "./demoComponent/ClassComponent";
+import BTComponent from "./BTComponent/BTComponent";
+import BindingData from "./BindingData/BindingData";
+import RenderWithConditionn from "./RenderWithConditioon/RenderWithConditionn";
+import HandleEvent from "./HandleEvent/HandleEvent";
+// component lớn nhất trong dự án
+
+// cos 2 loaj component
+// + class component (stateful) (1 đối tượng) sử dụng trước < 2019 (quan trọng nhất của class component là lifecycle )
+// + function component (stateless) ( 1 function bình thường) (100% dùng function)
+// attribute: được viết theo quy tắc comelCase
+
+//JSX: javascript XML => Giúp viết HTML trong javascript
+// 1 component chỉ được return về một thẻ JSX duy nhất
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <span className='title'>hello react</span>
+     <p>heh</p>
+     <FunctionComponent></FunctionComponent>
+     <ClassComponent></ClassComponent>
+
+     <FunctionComponent/> */}
+      <BTComponent />
+
+      <BindingData />
+
+      <RenderWithConditionn/>
+
+      <HandleEvent/>
     </div>
   );
 }
