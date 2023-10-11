@@ -10,7 +10,7 @@ const HandleEvent = () => {
 //   Mọi event trong react đều trả về tham số event 
   return (
     <div className="container">
-      <h1>HandleEvent</h1>
+      <h1 className="title">HandleEvent</h1>
       {/* Do hàm loger() không có tham số nên không cần thêm dấu gọi hàm  */}
       <button className="btn btn-outline-success mb-3" onClick={loger}>
         Loger
@@ -21,7 +21,8 @@ const HandleEvent = () => {
       <button
         className="btn btn-outline-info mb-3 ms-3 "
         // sử dụng annonymus function
-        onClick={() => {
+        // luôn tồn tại tham số là event 
+        onClick={(event) => {
           showMessage("hello show Message");
           loger();
         }}
@@ -32,7 +33,7 @@ const HandleEvent = () => {
       <button
         className="btn btn-outline-danger ms-3 mb-3"
         onClick={(event) => {
-          console.log(event);
+          console.log(event.target);
           alert("Duy Anh $2000");
         }}
       >
