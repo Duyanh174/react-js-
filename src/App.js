@@ -7,6 +7,7 @@ import BindingData from "./BindingData/BindingData";
 import RenderWithConditionn from "./RenderWithConditioon/RenderWithConditionn";
 import HandleEvent from "./HandleEvent/HandleEvent";
 import StylelComponent from "./StyleComponent/StylelComponent";
+import RenderWithMap from "./RenderWithMap/RenderWithMap";
 // component lớn nhất trong dự án
 
 // cos 2 loaj component
@@ -34,6 +35,8 @@ function App() {
       <HandleEvent/>
 
       <StylelComponent/>
+
+      <RenderWithMap/>
     </div>
   );
 }

@@ -15,7 +15,10 @@ const StylelComponent = () => {
       */}
       <p style={{fontSize : '20px', fontWeight:'600'}}>Style inline </p>
 
-      <p className="style__title"> Hello SCSS</p> 
+      <p className="style__title"> Hello SCSS</p> '
+      
+
+      
     </div>
   );
 };
